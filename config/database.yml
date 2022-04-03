@@ -22,6 +22,7 @@ test:
 
 production:
   <<: *default
+  adapter: postgesql
   database: campus_anywhere_production
   username: postgres
   password: <%= Rails.application.credentials.db[:password] %>
