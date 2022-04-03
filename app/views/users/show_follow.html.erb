@@ -1,5 +1,7 @@
 <% if @users.any? %>
   <div class="users follow">
-    <%= render @users %>
+  <% @users.each do |user| %>
+    <%= render 'users/user', user: user %>
+  <% end %>
   </div>
 <% end %>

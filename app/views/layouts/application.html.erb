@@ -16,7 +16,7 @@
     <p class = "username"><%=link_to current_user.name, user_path(current_user.id), class: "link" %></p> 
     <%= link_to "Log out", out_path, method: :post, class: "btn btn-primary" %>
     <%= link_to "登録情報変更", edit_user_path(current_user.id), class: "btn btn-primary" %>
-    <%= link_to "全てのユーザー", users_path, class: "btn btn-primary" %>
+    <%= link_to "全てのユーザー", index_path, class: "btn btn-primary" %>
     <%= link_to "全ての投稿", root_path, class: "btn btn-primary" %>
     <%= link_to "投稿", makepost_path, class: "btn btn-primary" %>
   <% else %>

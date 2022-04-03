@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/new', to: 'sessions#new'
   get '/signup', to: 'users#signup'
   get '/show', to: 'users#show'
+  get '/index', to: 'users#index'
   post '/login',   to: 'sessions#create'
   post '/out', to: 'sessions#logout'
   post '/sign', to: 'users#create'
@@ -19,7 +20,7 @@ Rails.application.routes.draw do
   post 'favorite/:id' => 'favorites#create', as: 'create_favorite'
   delete 'favorite/:id' => 'favorites#destroy', as: 'destroy_favorite'
   resources :edit_update
-  resources :users, only: %i[show edit update]
+  resources :users, only: %i[show edit update index]
   resources :messages, only: [:create]
   resources :rooms, only: %i[create show]
   resources :users do
