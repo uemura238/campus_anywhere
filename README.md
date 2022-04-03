@@ -10,6 +10,10 @@ Rails 6.1.4.6
 Rspec 3.11  
 jquery 3.4.1  
 PostgreSQL 14.2  
+Nginx(Web Server)  
+Puma(Application Server)  
+Capistrano  
+AWS EC2 (Amazon Linux2)/RDS(Postgresql)/S3/VPC/IAM  
 
 ## 機能一覧
 
