@@ -1,0 +1,9 @@
+<p>ユーザー名キーワード検索</p>
+<%= form_tag(users_path, :method => "get") do %>
+<%= text_field_tag :search %> 
+<%= submit_tag "Search" ,:name => nil ,class: "post"%> 
+<% end %> 
+<h2><%= paginate @users %></h2>  
+<% @users.each do |user| %>
+  <%= render @users %>
+<% end %>

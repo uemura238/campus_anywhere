@@ -1,0 +1,8 @@
+<h2>Message Room</h2>
+<%= render 'message' %>
+<%= form_for @message do |f| %>
+  <%= f.text_field :content, size: 70, class:"form-text-field" %>
+    <%= f.hidden_field :room_id, value: @room.id %>
+    <%= f.submit "post",class: 'post'%>
+<% end %> 
+

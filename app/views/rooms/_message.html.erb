@@ -1,0 +1,10 @@
+<% if @messages.present? %>
+  <% @messages.each do |m| %>
+      <% if current_user.id == m.user_id %>
+      <div class="chat-box chat-me"> <h3><%= m.content %></h3></div>
+      <% else %>
+      <div class="chat-box chat-their"> <h3><%= m.content %></h3></div>
+      <% end %>
+  <% end %>
+<% end %>
+

@@ -1,0 +1,19 @@
+<% if logged_in? %>
+  <p>大学名キーワード検索</p>
+  <%= form_tag(microposts_path, :method => "get") do %>
+  <%= text_field_tag :search %> 
+  <%= submit_tag "Search" ,:univ => nil ,class: "post"%> 
+  <% end %> 
+  <h1>Newest posts</h1>
+  <p class="flash"><%= notice %></p>
+  <% if @micropost.any? %>
+    <ol>
+      <%= render 'index_posts' %>
+      <h2><%= paginate @micropost %></h2>
+    </ol>
+  <% end %>
+<% else %>
+  <h1 class ="home" >Campus Anywhere<h1>
+  <p><%= link_to "Sign up Now!", signup_path, class: "signup home" %></p>
+  <h2 class="home">お忙しい中ポートフォリオを開いていただきありがとうございます。<br>Sign up Now からアカウントを作成するか、<br>右上のGuest Modeからログインして機能をお確かめください。</h2>
+<% end %>

@@ -1,0 +1,229 @@
+// Place all the styles related to the FirstPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+header{
+  // position: fixed;
+  width: 100%;
+  margin:0;
+  padding-bottom: 60px;
+  background-color: goldenrod;
+}
+
+main{
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.username{
+  float: left;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.post{
+  // margin-top: 40px;
+  white-space: normal;
+  padding-top: 5px;
+  background-color: darkkhaki;
+  padding: 10px 20px;
+  color: white;
+  border-radius:10px;
+  border: none;&:hover {
+    background-color: darkgoldenrod;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.btn{
+  float: right;
+  background-color: darkkhaki;
+  margin-top: 15px;
+  margin-right: 20px;
+  border: none;&:hover {
+    background-color: darkgoldenrod;
+  }
+}
+
+.signup{
+  background-color: darkkhaki;
+  padding: 5px 65px;
+  font-size: 30px;
+  color: gray;
+  border-radius:10px;&:hover {
+    background-color: darkgoldenrod;
+    text-decoration: none;
+    color: white;
+  }
+  
+}
+
+.home{
+  margin: 30px;
+}
+
+.review_btn{
+  background-color: palevioletred;
+  padding: 10px 20px;
+  margin-right: 20px;
+  color: aliceblue;
+  float: right;
+  border-radius:10px;&:hover {
+    background-color: coral;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.profile{
+  text-align: left;
+}
+
+.link{
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* forms */
+
+.form-button{
+  background-color: darkkhaki;
+  margin: 20px;
+  width: 50%;
+  height: 20%;
+  color :white;
+  border :none;
+  padding :10px 0;
+  border-radius:10px;&:hover {
+    background-color: darkgoldenrod;
+  }
+}
+
+.following_follower{
+  text-align: left;
+  background-color: white;
+  width: 60%;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius:20px
+  
+}
+
+.review{
+  background-color: white;
+  text-align: left;
+  width: 90%;
+  margin: 25px;
+  padding: 20px;
+  border-radius:20px
+}
+
+.microposts{
+  list-style: none;
+  padding-left: 0;
+}
+
+.flash{
+  // background-color: pink;
+  border-radius:5px;
+  padding: 5px 0;
+  width: 30%;
+  margin: 25px auto;
+  color: palevioletred;
+  font-size: 20px;
+}
+
+.chat-box{
+  
+  text-align: center;
+  width: 40%;
+  // margin: 30px 20px;
+  
+  padding: 3px 10px;
+  border-radius:20px;
+}
+
+.chat-me{
+  background-color: burlywood;
+  margin: 20px 40%;
+  text-align: left;
+  // float: right;
+  
+}
+
+.like{
+  float: left;
+}
+
+.like_button{
+  border: none;
+  background-color:rgba(0,0,0,0);
+  opacity       : 1; 
+}
+
+.chat-their{
+  background-color: cornsilk;
+  margin: 20px 20%;
+  text-align: left;
+  // float: left;
+  
+}
+
+.show{
+  background-color: aqua;
+  
+}
+
+body {
+  text-align:center;
+  margin:0;
+  background-color: bisque;
+  padding-bottom: 60px;
+}
+
+$gray-medium-light: #eaeaea;
+
+footer {
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  margin-top: 45px;
+  padding-top: 5px;
+  padding-bottom: 90px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  background-color: indianred;
+  a {
+    color: whitesmoke;
+    &:hover {
+      text-decoration: none;
+      color: gray;
+    }
+  }
+  small {
+    font-size: 20px;
+    padding :30px 20px;
+    float: left;
+    color: whitesmoke;
+  }
+  ul {
+    font-size: 20px;
+    float: right;
+    list-style: none;
+    li {
+      padding :30px 15px;
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}
