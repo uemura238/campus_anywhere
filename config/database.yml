@@ -22,7 +22,7 @@ test:
 
 production:
   <<: *default
-  database: アプリ名_production
+  database: campus_anywhere_production
   username: postgres
   password: <%= Rails.application.credentials.db[:password] %>
   host: <%= Rails.application.credentials.db[:hostname] %>
