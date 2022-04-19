@@ -1,0 +1,26 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - '5455:5455'
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bundle exec rails s -p 2380 -b '0.0.0.0'
+    tty: true
+    stdin_open: true
+    depends_on:
+      - db
+    ports:
+      - "2380:2380"
+    volumes:
+      - .:/campus_anywhere
+volumes:
+  postgresql-data:
+    driver: local
