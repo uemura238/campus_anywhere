@@ -11,8 +11,6 @@ orbs:
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
   build:
-    docker:
-      - image: cimg/ruby:2.6.9
     executor: ruby/default
     steps:
       - checkout
