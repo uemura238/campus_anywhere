@@ -22,11 +22,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV['DATABASE_NAME'] || 'test_app_db' %>
-  host: <%= ENV['DATABASE_HOST'] || 'localhost' %>
-  port: <%= ENV['DATABASE_PORT'] || 5432 %>
-  username: <%= ENV['DATABASE_USER'] || '' %>
-  password: <%= ENV['DATABASE_PASSWORD'] || '' %>
+  database: db/test.sqlite3
+  host: localhost
 
 production:
   <<: *default
