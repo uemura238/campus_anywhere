@@ -22,8 +22,6 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  user: <%= ENV.fetch("PGUSER") %>
-  user: <%= ENV.fetch("PGPASSWORD") %>
   database: db/test.sqlite3
   host: localhost
 
