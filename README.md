@@ -12,6 +12,8 @@ jquery 3.4.1
 PostgreSQL 14.2  
 Nginx(Web Server)  
 Puma(Application Server)  
+docker 20.10.14  
+docker-compose 1.29.2  
 Capistrano  
 AWS EC2 (Amazon Linux2)/RDS(Postgresql)/S3/VPC/IAM  
 
@@ -19,6 +21,7 @@ AWS EC2 (Amazon Linux2)/RDS(Postgresql)/S3/VPC/IAM
 
 ユーザー登録機能  
 レビュー投稿機能  
+ユーザー情報編集機能  
 いいね機能  
 フォローフォロバ機能  
 ページネーション機能  
