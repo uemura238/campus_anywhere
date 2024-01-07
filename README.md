@@ -6,8 +6,8 @@ Campus Anywhereは高校生向けの大学情報共有サイトです。
 ## 使用した技術
 
 Ruby 3.1.4  
-Rails 7.1.2
-Rspec 6.0.4
+Rails 7.1.2  
+Rspec 6.0.4  
 jquery 3.4.1  
 PostgreSQL 14.2  
 Nginx(Web Server)  
