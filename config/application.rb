@@ -25,6 +25,6 @@ module Portfolio
     # config.eager_load_paths << Rails.root.join("extras")
     config.active_support.cache_format_version = 7.1
 
-    config.hosts << 'https://campus-anywhere.onrender.com'
+    config.hosts << 'campus-anywhere.onrender.com'
   end
 end
