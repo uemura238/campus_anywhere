@@ -27,7 +27,7 @@ test:
 production:
   <<: *default
   database: campus_anywhere_production
-  adapter: postgresql
-  username: campus_anywhere_production_user
-  password: EIDBKTlEDl9CazrITwRgdv3e57GWd2d3
-  host: postgres://campus_anywhere_production_user:EIDBKTlEDl9CazrITwRgdv3e57GWd2d3@dpg-cmhsl47109ks739ha000-a/campus_anywhere_production
+  # adapter: postgresql
+  # username: campus_anywhere_production_user
+  # password: EIDBKTlEDl9CazrITwRgdv3e57GWd2d3
+  # host: postgres://campus_anywhere_production_user:EIDBKTlEDl9CazrITwRgdv3e57GWd2d3@dpg-cmhsl47109ks739ha000-a/campus_anywhere_production
