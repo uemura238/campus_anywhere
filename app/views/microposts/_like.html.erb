@@ -1,1 +1,5 @@
-<p><%= link_to '❤️', create_favorite_path(micropost), method: :delete, class: "link", local: false %> <%= micropost.favorites.count %></p>
+<% if current_user.favorited?(micropost.id) %>
+  <p><%= link_to '❤️', create_favorite_path(micropost), method: :delete, class: "link", remote: true %> <%= micropost.favorites.count %></p>
+<% else %>
+  <p><%= link_to '🤍', destroy_favorite_path(micropost), method: :post, class: "link", remote: true %> <%= micropost.favorites.count %></p>
+<% end %>

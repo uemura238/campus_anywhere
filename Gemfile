@@ -8,6 +8,7 @@ gem 'rails', '~> 7.1'
 # Use sqlite3 as the database for Active Record
 gem 'bootstrap-sass', '3.4.1'
 gem 'faker'
+gem 'jquery-rails'
 # Use Puma as the app server
 gem 'puma', '~> 6.0'
 # Use SCSS for stylesheets
