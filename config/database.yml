@@ -26,8 +26,6 @@ test:
 
 production:
   <<: *default
-  database: campus_anywhere_production
   adapter: postgresql
-  username: postgres
-  password: <%= Rails.application.credentials.db[:password] %>
-  host: <%= Rails.application.credentials.db[:hostname] %>
+  encoding: unicode
+  pool: 5

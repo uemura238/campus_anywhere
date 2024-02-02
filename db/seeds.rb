@@ -32,31 +32,31 @@ end
 # ユーザーの一部を対象にマイクロポストを生成する
 users = User.order(:created_at).take(6)
 1.times do
-  univ = "早稲田大学"
+  univ = "桜大学"
   content = "アクセスも立地も周辺環境もとても良いと感じます。空きコマなどの時間には大学付近のカフェに行ってランチをしたりして楽しんでいます。"
   users.each { |user| user.microposts.create!(univ: univ, content: content) }
 end
 
 1.times do
-  univ = "明治大学"
+  univ = "みらいテクノロジー大学"
   content = "最近大学は再開発しており、次々に新しい病棟や施設が出来てきているので、施設は比較的新しいものが多くなってきた。ただし、キャンパスの広さとしてはあまり大規模な大学ではない。図書館や勉強スペースはもちろんある。"
   users.each { |user| user.microposts.create!(univ: univ, content: content) }
 end
 
 1.times do
-  univ = "駒澤大学"
+  univ = "緑ヶ丘大学"
   content = "キャンパスについては建物が最近立て直されたため、とても綺麗である。清掃員の方が綺麗に清掃してくださっているため、トイレや講義室なども綺麗で心地よい空間である。	"
   users.each { |user| user.microposts.create!(univ: univ, content: content) }
 end
 
 1.times do
-  univ = "中央大学"
+  univ = "海洋研究大学"
   content = "	キャンパスでもそれほど不自由はせずに充実している方だと思います。設備に関しても問題はありません。"
   users.each { |user| user.microposts.create!(univ: univ, content: content) }
 end
 
 1.times do
-  univ = "立教大学"
+  univ = "工芸学園大学"
   content = "	学校自体が比較的新しいこともあり校舎はきれいです。広い敷地を生かしたグラウンドも整備されています。"
   users.each { |user| user.microposts.create!(univ: univ, content: content) }
 end
