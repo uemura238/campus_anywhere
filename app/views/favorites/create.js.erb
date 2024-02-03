@@ -1,1 +1,1 @@
-$("#ajax").html("<%= escape_javascript(render('microposts/unlike')) %>");
+$('#favorite_<%= @micropost.id %>').html("<%= j(render "microposts/like", micropost: @micropost) %>");
