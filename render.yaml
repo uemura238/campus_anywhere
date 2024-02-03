@@ -1,0 +1,22 @@
+databases:
+  - name: Campus Anywhere DB
+    databaseName: campus_anywhere_production_nfyu
+    user: Campus Anywhere
+    region: singapore
+
+services:
+  - type: web
+    name: Campus Anywhere
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Campus Anywhere DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
