@@ -20,7 +20,7 @@
 99.times do |n|
 name  = Faker::Name.name
 status_message = "こんにちは！"
-email = Faker::Internet.free_email
+email = "example-#{n+1}@port.com"
 password = "password"
 User.create!(name:  name,
     status_message: status_message,
