@@ -1,8 +1,0 @@
-<% if logged_in? %>
-  <%= render 'first_pages/logged_in'%>
-<% else %>
-  <h1 class ="home" >Campus Anywhere<h1>
-  <%= link_to "Sign up Now!", signup_path, class: "signup home" %>
-  <p class ="home" >New Posts<p>
-<% end %>
-

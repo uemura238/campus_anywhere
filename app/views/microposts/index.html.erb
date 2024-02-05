@@ -14,6 +14,11 @@
   <% end %>
 <% else %>
   <h1 class ="home" >Campus Anywhere<h1>
-  <p><%= link_to "Sign up Now!", signup_path, class: "signup home" %></p>
-  <h2 class="home">お忙しい中ポートフォリオを開いていただきありがとうございます。<br>Sign up Now からアカウントを作成するか、<br>右上のGuest Modeからログインして機能をお確かめください。</h2>
+  <p><%= link_to "Sign Up", signup_path, class: "signup home" %></p>
+  <p>または</p>
+  <p><%= link_to "Log In", new_path, class: "signup home" %></p>
+  <h2 class="home">ポートフォリオを開いていただきありがとうございます。<br>Sign up からアカウントを新規作成するか、<br>下記のテスト用アカウントでログインして機能をお確かめください。</h2>
+  <h4>テスト用アカウント</h4>
+  <h4>メールアドレス test@example.com</h4>
+  <h4>パスワード 123456</h4>
 <% end %>

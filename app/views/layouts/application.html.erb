@@ -19,9 +19,6 @@
     <%= link_to "全てのユーザー", index_path, class: "btn btn-primary" %>
     <%= link_to "全ての投稿を見る", root_path, class: "btn btn-primary" %>
     <%= link_to "投稿する", makepost_path, class: "btn btn-primary" %>
-  <% else %>
-    <%= link_to "Login", new_path, class: "btn btn-primary" %>
-    <%= link_to "ゲストモード", users_guest_sign_in_path, method: :post , class: "btn btn-primary" %>
   <% end %>
  
   </div>

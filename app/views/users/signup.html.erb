@@ -1,10 +1,10 @@
-<h1>Campus Anywhere is one step away.</h1>
+<h1>必要情報の記入をお願いいたします。</h1>
 <div class="row">  
   <div class="col-md-6 col-md-offset-3">
     <p class="flash"><%= alert %></p>
     <%= form_with(url: sign_path)  do |form| %>
     <%= render 'users/form', f: form %>
-    <%= form.submit :"Create Account", class: "form-button" %>
+    <%= form.submit :"登録", class: "form-button" %>
     <% end %>
   </div>
 </div>

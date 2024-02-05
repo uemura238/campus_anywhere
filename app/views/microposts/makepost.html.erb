@@ -2,9 +2,9 @@
   <div class="col-md-6 col-md-offset-3">
     <h4>新しい投稿</h4>
     <%= form_with(url: microposts_path)  do |form| %>
-      <%= form.label :"University" %>
+      <%= form.label :"大学" %>
       <%= form.text_field :univ, class: "form-control" %>
-      <%= form.label :"New Review" %>
+      <%= form.label :"投稿" %>
       <%= form.text_area :content, class: "form-control" %>
       <%= form.submit :Post, class: "form-button" %>
     <% end %>

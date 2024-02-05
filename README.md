@@ -2,6 +2,7 @@
 
 Campus Anywhereは高校生向けの大学情報共有サイトです。  
 キャンパスの情報を投稿したり、気になるユーザーをフォローすることで、入学前から繋がりを作ることができます。
+URL:https://campus-anywhere.onrender.com
 
 ## 使用した技術
 
@@ -10,12 +11,8 @@ Rails 6.1.4.6
 Rspec 3.11  
 jquery 3.4.1  
 PostgreSQL 14.2  
-Nginx(Web Server)  
-Puma(Application Server)  
 docker 20.10.14  
-docker-compose 1.29.2  
-Capistrano  
-AWS EC2 (Amazon Linux2)/RDS(Postgresql)/S3/VPC/IAM  
+docker-compose 1.29.2   
 
 ## 機能一覧
 
@@ -32,4 +29,4 @@ DM送信機能
 ## 工夫した点
 
 Rspec・Rubocopによるテスト・バグの検知  
-follow・unfollowボタンに非同期通信を使用ユーザーの負担軽減
+フォロー機能・いいね機能に非同期通信を使用しユーザーの負担軽減
