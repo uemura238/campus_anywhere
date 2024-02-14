@@ -5,11 +5,11 @@ RSpec.describe 'UsersSignups', type: :system do
     fill_in 'name', with: ' '
     fill_in 'Email', with: 'user@invalid'
     fill_in 'Password', with: 'foo'
-    fill_in 'password_confirmation', with: 'bar'
-    click_on 'Create Account'
+    fill_in 'Password (2回目)', with: 'bar'
+    click_on '登録'
     aggregate_failures do
       expect(current_path).to eq signup_path
-      expect(page).to have_content 'Campus Anywhere is one step away.'
+      expect(page).to have_content '必要情報の記入をお願いいたします。'
       expect(page).to have_content 'failed. Please try again.'
     end
   end

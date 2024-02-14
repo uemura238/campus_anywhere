@@ -9,7 +9,8 @@ RSpec.describe 'FirstPages', type: :system do
       expect(page).to have_link 'Help',       href: help_path
       expect(page).to have_link 'About',      href: about_path
       expect(page).to have_link 'Contact',    href: contact_path
-      expect(page).to have_link 'Sign up Now!',     href: signup_path
+      expect(page).to have_link 'Sign Up',    href: signup_path
+      expect(page).to have_link 'Log In',     href: new_path
     end
   end
 end

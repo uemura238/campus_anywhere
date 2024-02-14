@@ -11,16 +11,17 @@ class MicropostsController < ApplicationController
   def create
     micropost = current_user.microposts.build(micropost_params)
     if micropost.save
-      flash[:notice] = 'You posted a review!'
+      flash[:notice] = '投稿しました。'
       redirect_to root_url
     else
-      redirect_to root_url
+      flash[:notice] = '空欄の状態では投稿できません'
+      redirect_back(fallback_location: makepost_path)
     end
   end
 
   def destroy
     @micropost.destroy
-    flash[:success] = 'Micropost deleted'
+    flash[:success] = '投稿を削除しました。'
     redirect_back(fallback_location: root_path)
   end
 

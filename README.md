@@ -9,6 +9,7 @@ URL:https://campus-anywhere.onrender.com
 Ruby 3.1.4  
 Rails 6.1.4.6  
 Rspec 3.11  
+rubocop 1.59.0  
 jquery 3.4.1  
 PostgreSQL 14.2  
 docker 20.10.14  

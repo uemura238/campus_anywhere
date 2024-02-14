@@ -26,13 +26,13 @@ RSpec.describe Micropost, type: :model do
       it 'univが空だと投稿できない' do
         @micropost.univ = nil
         @micropost.valid?
-        expect(@micropost.errors.full_messages).to include("Univ can't be blank")
+        expect(@micropost.errors.full_messages).to include('Univを入力してください')
       end
 
       it 'contentが空だと投稿できない' do
         @micropost.content = nil
         @micropost.valid?
-        expect(@micropost.errors.full_messages).to include("Content can't be blank")
+        expect(@micropost.errors.full_messages).to include('Contentを入力してください')
       end
 
       it 'univが51文字以上だと投稿できない' do

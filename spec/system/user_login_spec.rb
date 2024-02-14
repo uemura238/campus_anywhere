@@ -17,7 +17,8 @@ RSpec.describe 'UsersLogins', type: :system do
     click_on 'Log out'
     aggregate_failures do
       expect(current_path).to eq root_path
-      expect(page).to have_link 'Login', href: new_path
+      expect(page).to have_link 'Sign Up', href: signup_path
+      expect(page).to have_link 'Log In', href: new_path
       expect(page).to have_no_link 'Log out'
       expect(page).to have_no_link '登録情報変更'
     end

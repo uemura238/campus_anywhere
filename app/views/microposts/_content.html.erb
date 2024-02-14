@@ -1,5 +1,5 @@
 <div class ="ajax">
-    <h5>Posted <%= time_ago_in_words(micropost.created_at) %> ago.</h5>
+    <h5><%= time_ago_in_words(micropost.created_at) %>前に投稿</h5>
     <h1><%= micropost.univ %></h1>
     <h3><%= micropost.content %></h3>
     <h4><%= link_to micropost.user.name, micropost.user, class: "link"%></h4>

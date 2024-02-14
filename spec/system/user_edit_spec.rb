@@ -9,7 +9,7 @@ RSpec.describe 'UsersEdits', type: :system do
     fill_in 'Name', with: ' '
     fill_in 'Email', with: 'user@invalid'
     fill_in 'Password', with: 'foo'
-    fill_in 'Confirmation', with: 'bar'
+    fill_in 'Password (2回目)', with: 'bar'
     click_on '変更を保存'
     aggregate_failures do
       expect(current_path).to eq user_path(user)
@@ -23,7 +23,7 @@ RSpec.describe 'UsersEdits', type: :system do
     fill_in 'Name', with: 'Foo Bar'
     fill_in 'Email', with: 'foo@bar.com'
     fill_in 'Password', with: ''
-    fill_in 'Confirmation', with: ''
+    fill_in 'Password (2回目)', with: ''
     click_on '変更を保存'
     aggregate_failures do
       expect(current_path).to eq user_path(user)
